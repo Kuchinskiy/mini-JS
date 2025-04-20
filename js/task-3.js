@@ -12,7 +12,13 @@
 
 // 5) Нагадую, множення можна виконати лише для цифр, тому спочатку треба буде виділити числа з рядка за допомогою метода чисел Number.parseInt(значення)
 
-function figureVolume(width, height, length) {}
+function figureVolume(width, height, length) {
+	width = Number.parseInt(width);
+	height = Number.parseInt(height);
+	length = Number.parseInt(length);
+
+	return width * height * length;
+}
 
 console.log(figureVolume("34cм", "25cм", "16cм")); // 13600
 console.log(figureVolume("5cм", "5cм", "20cм")); // 500
