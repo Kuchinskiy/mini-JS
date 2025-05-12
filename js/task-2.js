@@ -13,7 +13,10 @@
 // • <totalPrice> — це загальна вартість замовлення, що включає вартість товару і його доставки
 
 function getShippingMessage(country, price, deliveryFee) {
-	return `Shipping to ${country} will cost ${price + deliveryFee} credits`;
+	const totalPrice = price + deliveryFee;
+	const message = `Shipping to ${country} will cost ${totalPrice} credits`;
+
+	return message;
 }
 
 console.log(getShippingMessage("Australia", 120, 50)); // "Shipping to Australia will cost 170 credits"

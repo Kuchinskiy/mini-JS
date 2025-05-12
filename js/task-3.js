@@ -16,8 +16,9 @@ function figureVolume(width, height, length) {
 	width = Number.parseInt(width);
 	height = Number.parseInt(height);
 	length = Number.parseInt(length);
-
-	return width * height * length;
+	
+	const dimensions = width * height * length;
+	return dimensions;
 }
 
 console.log(figureVolume("34cм", "25cм", "16cм")); // 13600
